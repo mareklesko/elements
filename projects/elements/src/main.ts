@@ -4,8 +4,8 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
-// import '../node_modules/devextreme/dist/css/dx.common.css';
-// import '../node_modules/devextreme/dist/css/dx.light.css';
+import 'devextreme/dist/css/dx.common.css';
+import 'devextreme/dist/css/dx.light.css';
 
 if (environment.production) {
   enableProdMode();

@@ -1,0 +1,19 @@
+<div matTooltip="tooltip.">
+  <link rel="stylesheet" href="../../../../node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+    type="text/css" />
+  <link rel="stylesheet" href="../../../../node_modules/devextreme/dist/css/dx.common.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../node_modules/devextreme/dist/css/dx.light.css" type="text/css" />
+  <slot></slot>
+  <!-- <ng-content></ng-content> -->
+</div>
+<button mat-button (click)="click()">Click</button>
+<dx-button text="Click me" (onClick)="click()">
+</dx-button>
+<dx-list>
+  <dxi-item>
+    <h1>Available items</h1>
+  </dxi-item>
+  <dxi-item *ngFor="let item of listItems" [badge]="item.badge">
+    <h2>{{item.text}}</h2>
+  </dxi-item>
+</dx-list>

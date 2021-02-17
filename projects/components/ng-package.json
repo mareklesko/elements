@@ -1,0 +1,12 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/components",
+  "lib": {
+    "entryFile": "src/public-api.ts",
+    "umdModuleIds": {
+      "devextreme-angular/ui/button": "devextreme-angular/ui/button",
+      "devextreme-angular/ui/list": "devextreme-angular/ui/list",
+      "devextreme-angular/ui/nested": "devextreme-angular/ui/nested"
+    }
+  }
+}
